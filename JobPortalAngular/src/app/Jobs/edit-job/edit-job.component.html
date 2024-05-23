@@ -1,0 +1,74 @@
+<div class="row">
+    <h3>Update Job Description</h3>
+    <br/>
+    <form>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Company Name</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="companyName" [(ngModel)]="job.companyName" name="companyName">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Experience</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="experience" [(ngModel)]="job.experience" name="experience">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Job Title</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="jobTitle" [(ngModel)]="job.jobTitle" name="jobTitle">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Linkedin URL</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="linkedinUrl" [(ngModel)]="job.linkedinUrl" name="linkedinUrl">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Joining Date</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="joiningDate" [(ngModel)]="job.joiningDate" name="joiningDate">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="description" [(ngModel)]="job.description" name="description">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Mandatory Skills</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="mandatorySkills" [(ngModel)]="job.mandatorySkills" name="mandatorySkills">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Optional Skills</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="optionalSkills" [(ngModel)]="job.optionalSkills" name="optionalSkills">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Certification</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="certification" [(ngModel)]="job.certification" name="certification">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Expiry Of Role</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="expiryOfRole" [(ngModel)]="job.expiryOfRole" name="expiryOfRole">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <div class="col-sm-4">
+          <button class="btn btn-primary" (click)="updateJob(job)">Update</button>&nbsp;&nbsp;
+          <button type="button" class="btn btn-secondary" (click)="backToJobList()">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  

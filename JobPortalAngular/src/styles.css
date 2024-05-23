@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+a {
+    text-decoration: none !important; /* Remove underline */
+    color: white !important; /* Change font color to white */
+  }
+
+.a-color {
+  color: black !important;
+}

@@ -1,0 +1,74 @@
+<div class="row">
+    <h3>Add Job Description</h3>
+    <br/>
+    <form>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Company Name</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="companyName" placeholder="Enter Company Name" [(ngModel)]="job.companyName" name="companyName">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Experience</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="experience" placeholder="Enter Number of Experience" [(ngModel)]="job.experience" name="experience">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Job Title</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="jobTitle" placeholder="Enter Job Title" [(ngModel)]="job.jobTitle" name="jobTitle">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Linkedin URL</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="linkedinUrl" placeholder="Enter Linkedin URL" [(ngModel)]="job.linkedinUrl" name="linkedinUrl">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Joining Date</label>
+        <div class="col-sm-4">
+          <input type="datetime-local" class="form-control" id="joiningDate" placeholder="Enter Joining Date" [(ngModel)]="job.joiningDate" name="joiningDate">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="description" placeholder="Enter Description" [(ngModel)]="job.description" name="description">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Mandatory Skills</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="mandatorySkills" placeholder="Enter Mandatory Skills" [(ngModel)]="job.mandatorySkills" name="mandatorySkills">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Optional Skills</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="optionalSkills" placeholder="Enter Optional Skills" [(ngModel)]="job.optionalSkills" name="optionalSkills">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Certification</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="certification" placeholder="Enter Certification" [(ngModel)]="job.certification" name="certification">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Expiry Of Role</label>
+        <div class="col-sm-4">
+          <input type="datetime-local" class="form-control" id="expiryOfRole" placeholder="Enter Expiry Of Role" [(ngModel)]="job.expiryOfRole" name="expiryOfRole">
+        </div>
+      </div><br/>
+      <div class="form-group row">
+        <div class="col-sm-4">
+          <button class="btn btn-primary" (click)="saveJob()">Add</button>&nbsp;&nbsp;
+          <button type="button" class="btn btn-secondary" (click)="backToJobList()">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  

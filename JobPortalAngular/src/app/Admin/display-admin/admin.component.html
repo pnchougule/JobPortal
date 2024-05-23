@@ -1,0 +1,37 @@
+<div class="row">
+  <h3>Admin List</h3>
+</div>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <!-- <button (click)="addAdmin()" class="btn btn-success">Add New</button> -->
+  <button class="btn btn-success"><a [routerLink]="['/addAdmin']">Add New</a></button>
+</div>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Company</th>
+      <th>Email Id</th>
+      <th>LinkedIn URL</th>
+      <!-- <th>City</th>
+      <th>Function</th> -->
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let admin of admins">
+      <td>{{ admin.adminName }}</td>
+      <td>{{ admin.companyName }}</td>
+      <td>{{ admin.emailId }}</td>
+      <td>{{ admin.linkedinUrl }}</td>
+      <!-- <td>{{ admin.city }}</td>
+      <td>{{ admin.function }}</td> -->
+      <td>
+        <!-- <button (click)="updateAdmin(admin.adminId)" class="btn btn-primary">Update</button> -->
+        <button class="btn btn-primary"><a [routerLink]="['/editAdmin', admin.adminId ]">Update</a></button>
+        <button (click)="deleteAdmin(admin.adminId)" class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

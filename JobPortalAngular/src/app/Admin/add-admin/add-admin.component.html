@@ -1,0 +1,49 @@
+<div class="row">
+  <h3>Add Admin</h3>
+  <br/>
+  <form>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="adminName" placeholder="Enter Admin Name" [(ngModel)]="admin.adminName" name="adminName">
+      </div>
+    </div><br/>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Company</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="companyName" placeholder="Enter Company Name" [(ngModel)]="admin.companyName" name="companyName">
+      </div>
+    </div><br/>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Email Id</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="emailId" placeholder="Enter Email Id" [(ngModel)]="admin.emailId" name="emailId">
+      </div>
+    </div><br/>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Linkedin URL</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="linkedinUrl" placeholder="Enter Linkedin URL" [(ngModel)]="admin.linkedinUrl" name="linkedinUrl">
+      </div>
+    </div><br/>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">City</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="cityId" placeholder="Enter City" [(ngModel)]="admin.cityId" name="cityId">
+      </div>
+    </div><br/>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Function</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="functionId" placeholder="Enter Function" [(ngModel)]="admin.functionId" name="functionId">
+      </div>
+    </div><br/>
+    <div class="form-group row">
+      <div class="col-sm-4">
+        <button class="btn btn-primary" (click)="saveAdmin()">Add</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-secondary" (click)="backToAdminList()">Cancel</button>
+      </div>
+    </div>
+  </form>
+</div>
+
