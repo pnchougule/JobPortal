@@ -1,4 +1,5 @@
 ﻿using JobPortalAPI.Models;
+using JobPortalAPI.SP_Models;
 
 namespace JobPortalAPI.Service.Interfaces
 {
@@ -9,6 +10,6 @@ namespace JobPortalAPI.Service.Interfaces
         Task InsertUser(User jd);
         Task UpdateUser(User jd);
         Task DeleteUser(int id);
-        Task<string> Login(string email, string Password);
+        Task<LoginResponse> Login(LoginRequest loginRequest);
     }
 }

@@ -4,12 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using JobPortalAPI.Models;
 using JobPortalAPI.Service.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JobPortalAPI.Controller
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class JdController : ControllerBase
     {
         private readonly IUnitOfWorkService _unitOfWorkService;

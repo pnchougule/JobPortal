@@ -73,14 +73,14 @@ namespace JobPortalAPI.Controllers
 
         [AllowAnonymous]
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginModel model)
+        public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var token = await _unitOfWorkService.usersService.Login(model.Email, model.Password);
+            var token = await _unitOfWorkService.usersService.Login(loginRequest);
             if (token == null)
             {
                 return Unauthorized("Invalid email or password.");

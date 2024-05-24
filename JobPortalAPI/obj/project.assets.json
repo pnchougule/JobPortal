@@ -4462,11 +4462,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\poonamc\\Desktop\\Angular\\JobPortalAPI\\JobPortalAPI.csproj",
+      "projectUniqueName": "C:\\Users\\poonamc\\Desktop\\JobPortal\\JobPortalAPI\\JobPortalAPI.csproj",
       "projectName": "JobPortalAPI",
-      "projectPath": "C:\\Users\\poonamc\\Desktop\\Angular\\JobPortalAPI\\JobPortalAPI.csproj",
+      "projectPath": "C:\\Users\\poonamc\\Desktop\\JobPortal\\JobPortalAPI\\JobPortalAPI.csproj",
       "packagesPath": "C:\\Users\\poonamc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\poonamc\\Desktop\\Angular\\JobPortalAPI\\obj\\",
+      "outputPath": "C:\\Users\\poonamc\\Desktop\\JobPortal\\JobPortalAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\poonamc\\AppData\\Roaming\\NuGet\\NuGet.Config",

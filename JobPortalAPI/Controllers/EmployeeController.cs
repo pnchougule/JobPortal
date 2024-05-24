@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using JobPortalAPI.Service.Interfaces;
 using JobPortalAPI.SP_Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +12,7 @@ namespace JobPortalAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class EmployeeController:ControllerBase
     {
         private IUnitOfWorkService _unitOfWorkService;
