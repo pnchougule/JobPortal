@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using JobPortalAPI.Models;
 using JobPortalAPI.Service.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace JobPortalAPI.Controller
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class AdminController: ControllerBase
     {
         private readonly IUnitOfWorkService _unitOfWorkService;

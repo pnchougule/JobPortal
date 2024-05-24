@@ -1,6 +1,8 @@
 ﻿using JobPortalAPI.Models;
 using JobPortalAPI.Repository.Interfaces;
 using JobPortalAPI.Service.Interfaces;
+using JobPortalAPI.SP_Models;
+using Microsoft.AspNetCore.Identity.Data;
 
 namespace JobPortalAPI.Service
 {
@@ -38,9 +40,9 @@ namespace JobPortalAPI.Service
             await _unitOfWorkRepository.usersRepository.DeleteUser(id);
         }
 
-        public async Task<string> Login(string Email, string Password)
+        public async Task<LoginResponse> Login(SP_Models.LoginRequest loginRequest)
         {
-            return await _unitOfWorkRepository.usersRepository.Login(Email, Password);
+            return await _unitOfWorkRepository.usersRepository.Login(loginRequest);
         }
     }
 }

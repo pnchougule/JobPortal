@@ -1,5 +1,6 @@
 ﻿using JobPortalAPI.Models;
 using JobPortalAPI.SP_Models;
+using Microsoft.AspNetCore.Identity.Data;
 
 namespace JobPortalAPI.Repository.Interfaces
 {
@@ -10,6 +11,6 @@ namespace JobPortalAPI.Repository.Interfaces
         Task InsertUser(User jd);
         Task UpdateUser(User jd);
         Task DeleteUser(int id);
-        Task<string> Login(string email, string Password);
+        Task<LoginResponse> Login(SP_Models.LoginRequest loginRequest);
     }
 }
